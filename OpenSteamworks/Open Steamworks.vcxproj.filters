@@ -1,0 +1,926 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="ClientLoader.h" />
+    <ClInclude Include="Steamclient.h" />
+    <ClInclude Include="SteamclientAPI.h" />
+    <ClInclude Include="Steamworks.h" />
+    <ClInclude Include="Interfaces\Client\IClientAppManager.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientApps.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientAudio.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientBilling.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientConfigStore.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientContentServer.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientDepotBuilder.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientDeviceAuth.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientEngine.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientFriends.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientGameCoordinator.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientGameServer.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientGameServerStats.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientGameStats.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientHTTP.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientInventory.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientMasterServerUpdater.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientMatchmaking.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientMatchmakingServers.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientMusic.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientNetworkDeviceManager.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientNetworking.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientProductBuilder.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientRemoteStorage.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientScreenshots.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientShortcuts.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientStreamClient.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientStreamLauncher.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientUGC.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientUnifiedMessages.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientUser.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientUserStats.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientUtils.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\AppsCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\AppTicketCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\BillingCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\BridgeCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\ClientCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\ContentServerCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\ControllerCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\FriendsCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\GameCoordinatorCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\GameServerCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\GameServerStatsCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\GameStatsCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\HTMLSurfaceCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\HTTPCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\InventoryCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\ScreenshotsCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\RemoteStorageCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\OAuthCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\NetworkingCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\MusicCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\MatchmakingServersCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\MasterServerUpdaterCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\MatchmakingCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\StreamLauncherCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\VideoCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\UtilsCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\UserStatsCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\UserCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\UnifiedMessagesCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\UGCCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamApps\ISteamApps001.h">
+      <Filter>Interfaces\Steam\ISteamApps</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamApps\ISteamApps002.h">
+      <Filter>Interfaces\Steam\ISteamApps</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamApps\ISteamApps003.h">
+      <Filter>Interfaces\Steam\ISteamApps</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamApps\ISteamApps004.h">
+      <Filter>Interfaces\Steam\ISteamApps</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamApps\ISteamApps005.h">
+      <Filter>Interfaces\Steam\ISteamApps</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamApps\ISteamApps006.h">
+      <Filter>Interfaces\Steam\ISteamApps</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamApps\ISteamApps007.h">
+      <Filter>Interfaces\Steam\ISteamApps</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamApps\ISteamApps008.h">
+      <Filter>Interfaces\Steam\ISteamApps</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient006.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient007.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient008.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient009.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient010.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient011.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient012.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient013.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient014.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient015.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient016.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamClient\ISteamClient017.h">
+      <Filter>Interfaces\Steam\ISteamClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends001.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends002.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends003.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends004.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends005.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends006.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends007.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends008.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends009.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends010.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends011.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends012.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends013.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends014.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamFriends\ISteamFriends015.h">
+      <Filter>Interfaces\Steam\ISteamFriends</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser004.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser005.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser006.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser007.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser008.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser009.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser010.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser011.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser012.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser013.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser014.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser015.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser016.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser017.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser018.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser019.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUser\ISteamUser020.h">
+      <Filter>Interfaces\Steam\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUtils\ISteamUtils001.h">
+      <Filter>Interfaces\Steam\ISteamUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUtils\ISteamUtils002.h">
+      <Filter>Interfaces\Steam\ISteamUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUtils\ISteamUtils003.h">
+      <Filter>Interfaces\Steam\ISteamUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUtils\ISteamUtils004.h">
+      <Filter>Interfaces\Steam\ISteamUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUtils\ISteamUtils005.h">
+      <Filter>Interfaces\Steam\ISteamUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUtils\ISteamUtils006.h">
+      <Filter>Interfaces\Steam\ISteamUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUtils\ISteamUtils007.h">
+      <Filter>Interfaces\Steam\ISteamUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUtils\ISteamUtils008.h">
+      <Filter>Interfaces\Steam\ISteamUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamController\ISteamController001.h">
+      <Filter>Interfaces\Steam\ISteamController</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamController\ISteamController003.h">
+      <Filter>Interfaces\Steam\ISteamController</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamController\ISteamController004.h">
+      <Filter>Interfaces\Steam\ISteamController</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamController\ISteamController005.h">
+      <Filter>Interfaces\Steam\ISteamController</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServer\ISteamGameServer002.h">
+      <Filter>Interfaces\Steam\ISteamGameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServer\ISteamGameServer003.h">
+      <Filter>Interfaces\Steam\ISteamGameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServer\ISteamGameServer004.h">
+      <Filter>Interfaces\Steam\ISteamGameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServer\ISteamGameServer005.h">
+      <Filter>Interfaces\Steam\ISteamGameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServer\ISteamGameServer006.h">
+      <Filter>Interfaces\Steam\ISteamGameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServer\ISteamGameServer007.h">
+      <Filter>Interfaces\Steam\ISteamGameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServer\ISteamGameServer008.h">
+      <Filter>Interfaces\Steam\ISteamGameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServer\ISteamGameServer009.h">
+      <Filter>Interfaces\Steam\ISteamGameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServer\ISteamGameServer010.h">
+      <Filter>Interfaces\Steam\ISteamGameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServer\ISteamGameServer011.h">
+      <Filter>Interfaces\Steam\ISteamGameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServer\ISteamGameServer012.h">
+      <Filter>Interfaces\Steam\ISteamGameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage001.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage002.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage003.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage004.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage005.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage006.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage007.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage008.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage009.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage010.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage011.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage012.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage013.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMatchmaking\ISteamMatchmaking001.h">
+      <Filter>Interfaces\Steam\ISteamMatchmaking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMatchmaking\ISteamMatchmaking002.h">
+      <Filter>Interfaces\Steam\ISteamMatchmaking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMatchmaking\ISteamMatchmaking003.h">
+      <Filter>Interfaces\Steam\ISteamMatchmaking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMatchmaking\ISteamMatchmaking004.h">
+      <Filter>Interfaces\Steam\ISteamMatchmaking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMatchmaking\ISteamMatchmaking005.h">
+      <Filter>Interfaces\Steam\ISteamMatchmaking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMatchmaking\ISteamMatchmaking006.h">
+      <Filter>Interfaces\Steam\ISteamMatchmaking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMatchmaking\ISteamMatchmaking007.h">
+      <Filter>Interfaces\Steam\ISteamMatchmaking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMatchmaking\ISteamMatchmaking008.h">
+      <Filter>Interfaces\Steam\ISteamMatchmaking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMatchmaking\ISteamMatchmaking009.h">
+      <Filter>Interfaces\Steam\ISteamMatchmaking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUserStats\ISteamUserStats001.h">
+      <Filter>Interfaces\Steam\ISteamUserStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUserStats\ISteamUserStats002.h">
+      <Filter>Interfaces\Steam\ISteamUserStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUserStats\ISteamUserStats003.h">
+      <Filter>Interfaces\Steam\ISteamUserStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUserStats\ISteamUserStats004.h">
+      <Filter>Interfaces\Steam\ISteamUserStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUserStats\ISteamUserStats005.h">
+      <Filter>Interfaces\Steam\ISteamUserStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUserStats\ISteamUserStats006.h">
+      <Filter>Interfaces\Steam\ISteamUserStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUserStats\ISteamUserStats007.h">
+      <Filter>Interfaces\Steam\ISteamUserStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUserStats\ISteamUserStats008.h">
+      <Filter>Interfaces\Steam\ISteamUserStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUserStats\ISteamUserStats009.h">
+      <Filter>Interfaces\Steam\ISteamUserStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUserStats\ISteamUserStats010.h">
+      <Filter>Interfaces\Steam\ISteamUserStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUserStats\ISteamUserStats011.h">
+      <Filter>Interfaces\Steam\ISteamUserStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUGC\ISteamUGC001.h">
+      <Filter>Interfaces\Steam\ISteamUGC</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUGC\ISteamUGC002.h">
+      <Filter>Interfaces\Steam\ISteamUGC</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUGC\ISteamUGC003.h">
+      <Filter>Interfaces\Steam\ISteamUGC</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUGC\ISteamUGC008.h">
+      <Filter>Interfaces\Steam\ISteamUGC</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUGC\ISteamUGC009.h">
+      <Filter>Interfaces\Steam\ISteamUGC</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamNetworking\ISteamNetworking001.h">
+      <Filter>Interfaces\Steam\ISteamNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamNetworking\ISteamNetworking002.h">
+      <Filter>Interfaces\Steam\ISteamNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamNetworking\ISteamNetworking003.h">
+      <Filter>Interfaces\Steam\ISteamNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamNetworking\ISteamNetworking004.h">
+      <Filter>Interfaces\Steam\ISteamNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamNetworking\ISteamNetworking005.h">
+      <Filter>Interfaces\Steam\ISteamNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamUpdateStats.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamApp.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamAppDependencyInfo.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamAppLaunchOption.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamAppStats.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamAppVersion.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamDiscountQualifier.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamElemInfo.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamError.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamExternalBillingInfo.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamGlobalUserID.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamOfflineStatus.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamPaymentCardInfo.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamPaymentCardReceiptInfo.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamPrepurchaseInfo.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamPrepurchaseReceiptInfo.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamProgress.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamSplitLocalUserID.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamSubscription.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamSubscriptionBillingInfo.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamSubscriptionDiscount.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamSubscriptionReceipt.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\TSteamSubscriptionStats.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\CCallback.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\CGameID.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\CSteamAPIContext.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\CSteamID.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\ECurrencyCode.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\EResult.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\ESteamAppUpdateStatsQueryType.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\ESteamBufferMethod.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\ESteamError.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\ESteamFindFilter.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\ESteamNotify.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\ESteamPaymentCardType.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\ESteamSeekMethod.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\ESteamServerType.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\ESteamSubscriptionBillingInfoType.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\ESteamSubscriptionStatus.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\EVoiceResult.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\FriendGameInfo.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\gameserveritem.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\servernetadr.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\MatchMakingKeyValuePair.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\SteamSalt.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\SteamTypes.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteam2Bridge\ISteam2Bridge001.h">
+      <Filter>Interfaces\Steam\ISteam2Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteam2Bridge\ISteam2Bridge002.h">
+      <Filter>Interfaces\Steam\ISteam2Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamAppList\ISteamAppList001.h">
+      <Filter>Interfaces\Steam\ISteamAppList</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamAppTicket\ISteamAppTicket001.h">
+      <Filter>Interfaces\Steam\ISteamAppTicket</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamBilling\ISteamBilling001.h">
+      <Filter>Interfaces\Steam\ISteamBilling</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamBilling\ISteamBilling002.h">
+      <Filter>Interfaces\Steam\ISteamBilling</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamContentServer\ISteamContentServer001.h">
+      <Filter>Interfaces\Steam\ISteamContentServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamContentServer\ISteamContentServer002.h">
+      <Filter>Interfaces\Steam\ISteamContentServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamHTMLSurface\ISteamHTMLSurface001.h">
+      <Filter>Interfaces\Steam\ISteamHTMLSurface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamHTMLSurface\ISteamHTMLSurface002.h">
+      <Filter>Interfaces\Steam\ISteamHTMLSurface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamHTMLSurface\ISteamHTMLSurface003.h">
+      <Filter>Interfaces\Steam\ISteamHTMLSurface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamHTTP\ISteamHTTP001.h">
+      <Filter>Interfaces\Steam\ISteamHTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamHTTP\ISteamHTTP002.h">
+      <Filter>Interfaces\Steam\ISteamHTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMatchmakingServers\ISteamMatchmakingServers001.h">
+      <Filter>Interfaces\Steam\ISteamMatchmakingServers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMatchmakingServers\ISteamMatchmakingServers002.h">
+      <Filter>Interfaces\Steam\ISteamMatchmakingServers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamInventory\ISteamInventory001.h">
+      <Filter>Interfaces\Steam\ISteamInventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamInventory\ISteamInventory002.h">
+      <Filter>Interfaces\Steam\ISteamInventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamScreenshots\ISteamScreenshots001.h">
+      <Filter>Interfaces\Steam\ISteamScreenshots</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamScreenshots\ISteamScreenshots002.h">
+      <Filter>Interfaces\Steam\ISteamScreenshots</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamScreenshots\ISteamScreenshots003.h">
+      <Filter>Interfaces\Steam\ISteamScreenshots</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamVideo\ISteamVideo001.h">
+      <Filter>Interfaces\Steam\ISteamVideo</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamVideo\ISteamVideo002.h">
+      <Filter>Interfaces\Steam\ISteamVideo</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameCoordinator\ISteamGameCoordinator001.h">
+      <Filter>Interfaces\Steam\ISteamGameCoordinator</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameServerStats\ISteamGameServerStats001.h">
+      <Filter>Interfaces\Steam\ISteamGameServerStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamGameStats\ISteamGameStats001.h">
+      <Filter>Interfaces\Steam\ISteamGameStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMasterServerUpdater\ISteamMasterServerUpdater001.h">
+      <Filter>Interfaces\Steam\ISteamMasterServerUpdater</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUnifiedMessages\ISteamUnifiedMessages001.h">
+      <Filter>Interfaces\Steam\ISteamUnifiedMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMusic\ISteamMusic001.h">
+      <Filter>Interfaces\Steam\ISteamMusic</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamOAuth\ISteamOAuth001.h">
+      <Filter>Interfaces\Steam\ISteamOAuth</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamStreamLauncher\ISteamStreamLauncher001.h">
+      <Filter>Interfaces\Steam\ISteamStreamLauncher</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamMusicRemote\ISteamMusicRemote001.h">
+      <Filter>Interfaces\Steam\ISteamMusicRemote</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamRemoteStorage\ISteamRemoteStorage014.h">
+      <Filter>Interfaces\Steam\ISteamRemoteStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUtils\ISteamUtils009.h">
+      <Filter>Interfaces\Steam\ISteamUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamUGC\ISteamUGC010.h">
+      <Filter>Interfaces\Steam\ISteamUGC</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientVideo.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientBluetoothManager.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientParentalSettings.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Common\ParentalSettingsCommon.h">
+      <Filter>Interfaces\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Steam\ISteamParentalSettings\ISteamParentalSettings001.h">
+      <Filter>Interfaces\Steam\ISteamParentalSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Client\IClientHTMLSurface.h">
+      <Filter>Interfaces\Client</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Types">
+      <UniqueIdentifier>{59fd41b9-88cf-4b86-8171-cd642d3cd2c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{48649532-db97-4cc9-a5e8-4b1c228528a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Common">
+      <UniqueIdentifier>{3769c228-03af-4fa9-940b-b45999802ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Client">
+      <UniqueIdentifier>{549a7f87-5399-4a63-b816-c9e5147d4e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam">
+      <UniqueIdentifier>{e84b4aac-61ac-474e-a158-57699ab2385d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamUser">
+      <UniqueIdentifier>{a3ad31dd-ea9d-455a-ae85-80bb9391181a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamUtils">
+      <UniqueIdentifier>{cdf7bef8-27e6-4c5c-ac28-c16f17f8b918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamClient">
+      <UniqueIdentifier>{9d85dbe9-16c0-43c6-9845-bd494fde5315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamFriends">
+      <UniqueIdentifier>{564166f0-410e-4a14-902c-7f590405e212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamApps">
+      <UniqueIdentifier>{c775a153-c922-437d-bfd5-a35443c1766a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamController">
+      <UniqueIdentifier>{d267bdca-a076-406b-a48d-bba32449d6ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamGameServer">
+      <UniqueIdentifier>{316985ee-3799-43cc-8f45-3ddb85433b89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamRemoteStorage">
+      <UniqueIdentifier>{bda787d8-9695-4cf4-96b7-55689bdc2ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamMatchmaking">
+      <UniqueIdentifier>{7490cc41-344d-4809-9723-db8d315aa648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamUserStats">
+      <UniqueIdentifier>{2ef9ebf1-dd37-426d-aadb-13103316abb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamUGC">
+      <UniqueIdentifier>{03f995f4-1760-4146-a635-458ccd075187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamNetworking">
+      <UniqueIdentifier>{c59b5b6a-e0bf-49ea-95eb-eff2b9f93c2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteam2Bridge">
+      <UniqueIdentifier>{aec0cd3c-feda-406c-9636-dd022b38930b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamAppList">
+      <UniqueIdentifier>{dad5bf11-36c7-4248-88f0-37723543f1b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamAppTicket">
+      <UniqueIdentifier>{634b428c-a4dd-490a-b1f3-a374413dc612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamBilling">
+      <UniqueIdentifier>{538a80dd-b958-44b7-bedb-3e5bbdd633ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamContentServer">
+      <UniqueIdentifier>{e6f3e469-7e60-4f7c-a809-aae6a652096c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamHTMLSurface">
+      <UniqueIdentifier>{1b835dbd-041f-49d8-bcf3-bc2379f09c6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamHTTP">
+      <UniqueIdentifier>{7611f0b9-40d5-4737-94c6-c23616bb9825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamMatchmakingServers">
+      <UniqueIdentifier>{27c09220-21e9-4413-bebd-f7f931c65395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamInventory">
+      <UniqueIdentifier>{b8a14ec8-b98f-49e5-a6c6-4072d2d7efd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamScreenshots">
+      <UniqueIdentifier>{d7ea04d7-2de2-49f5-a64c-2fbba8ab74b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamVideo">
+      <UniqueIdentifier>{a2b80422-779b-4b66-970b-2384ddc40da0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamGameCoordinator">
+      <UniqueIdentifier>{eb2b994b-1797-4fd5-90cf-78089378efe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamGameServerStats">
+      <UniqueIdentifier>{ff2e68b1-53ed-4a7f-b692-c4fb3205a61a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamGameStats">
+      <UniqueIdentifier>{a52bffb7-7e57-4e4a-829a-897c8a5e938f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamMasterServerUpdater">
+      <UniqueIdentifier>{44c44d91-9954-4d38-b54f-6b06e19f2000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamUnifiedMessages">
+      <UniqueIdentifier>{f9467381-94ac-4525-af79-58140d5be3cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamMusic">
+      <UniqueIdentifier>{9bae9e2a-8f90-43f4-8e8b-009af926b2cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamOAuth">
+      <UniqueIdentifier>{7f1f2ca1-a16f-467d-af94-fe7000965011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamStreamLauncher">
+      <UniqueIdentifier>{5950c8e1-07fe-4d31-b73d-63696c84c655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamMusicRemote">
+      <UniqueIdentifier>{f6447036-3b3e-4004-afcf-fa0306afa71a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Steam\ISteamParentalSettings">
+      <UniqueIdentifier>{e6ada59e-b417-45cc-977b-008c5dfa7dcf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
